@@ -31,7 +31,7 @@ Para  esse layout, escolhi usar uma marca de carros como a da Tesla e pude trein
 
 <table align="center">
    <tr>
-    <td valign="top"><img src=""
+    <td valign="top"><img src="https://media.giphy.com/media/itjBDPgKtzcjnWfHbI/giphy.gif?cid=790b7611a33692ee0837d0608e00df58083e292010846f89&rid=giphy.gif&ct=g"
 "
 "> </td>
     
