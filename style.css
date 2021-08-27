@@ -1,0 +1,204 @@
+/*Fontes*/
+
+@font-face {
+    font-family: GothamMedium;
+    src: url(./fonts/GothamMedium.otf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(./fonts/GothamBookRegular.otf);
+}
+
+body {
+    font-family: "GothamMedium", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header .logo {
+    width: 120px;
+    margin-left: 20px;
+
+
+}
+
+header ul, header li {
+    list-style: none;
+}
+
+header .meio ul {
+    display: flex;
+    gap: 30px;
+}
+
+header .meio a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+header .ladodireito ul {
+    display: flex;
+    gap: 30px;
+}
+
+header .ladodireito a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+header .menu--icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+header .menu--icon div {
+    height: 2px;
+    background-color: black;
+}
+
+.active {
+    background-color: red;
+}
+
+
+
+/*MAIN*/
+
+main {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(78, 78, 78);
+
+}
+
+main h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "GothamBook" Arial, Helvetica, sans-serif;
+    color: rgb(122, 121, 121);
+}
+
+main h2 a {
+    color: rgb(78, 78, 78);
+
+}
+
+
+/*FOOTER*/
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+
+}
+
+footer .button {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+footer .button a {
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+footer .botao-dark {
+   background-color: rgba(23, 26, 32, 0.8);
+   color: white;
+}
+
+footer .botao-grey {
+    background-color: rgba(255, 255, 255, 0.65);
+    color: black;
+}
+
+footer .flecha {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+
+@keyframes down {
+    0%{
+        margin-top:0px;
+    }
+    50%{
+        margin-top:15px;
+    }
+    100%{
+        margin-top:0px;
+    }
+}
+
+footer .down {
+    height: 15px;
+    animation: down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media( max-width: 1100px){
+    header .meio{
+        display: none;
+    }
+    header .ladodireito li {
+        display: none;
+    }
+    header .ladodireito  li.menu {
+        display: block;
+        margin-right: 20px;
+    }
+}
